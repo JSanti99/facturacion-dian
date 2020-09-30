@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Buyer = () => {
   const [buyerData, setBuyerData] = useState({
     senores: "",
-    NIT: 0,
+    cedula: 0,
     telefono: 0,
     direccion: "",
     ciudad: "",
@@ -23,13 +23,13 @@ const Buyer = () => {
       <div className="form-group">
         <div className="row mb-2">
           <div className="col-12">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <div class="input-group-text py-1">Señores</div>
+            <div className="input-group">
+              <div className="input-group-prepend">
+                <div className="input-group-text py-1">Señores</div>
               </div>
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 name="senores"
                 onChange={handleChange}
                 value={buyerData.senores}
@@ -39,27 +39,27 @@ const Buyer = () => {
         </div>
         <div className="row mb-2">
           <div className="col-6">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <div class="input-group-text py-1">NIT</div>
+            <div className="input-group">
+              <div className="input-group-prepend">
+                <div className="input-group-text py-1">Cedula</div>
               </div>
               <input
                 type="number"
-                class="form-control"
-                name="NIT"
+                className="form-control"
+                name="cedula"
                 onChange={handleChange}
-                value={buyerData.NIT}
+                value={buyerData.cedula}
               />
             </div>
           </div>
           <div className="col-6">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <div class="input-group-text py-1">Telefono</div>
+            <div className="input-group">
+              <div className="input-group-prepend">
+                <div className="input-group-text py-1">Telefono</div>
               </div>
               <input
                 type="number"
-                class="form-control"
+                className="form-control"
                 name="telefono"
                 onChange={handleChange}
                 value={buyerData.telefono}
@@ -69,13 +69,13 @@ const Buyer = () => {
         </div>
         <div className="row mb-2">
           <div className="col-6">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <div class="input-group-text py-1">Direccion</div>
+            <div className="input-group">
+              <div className="input-group-prepend">
+                <div className="input-group-text py-1">Direccion</div>
               </div>
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 name="direccion"
                 onChange={handleChange}
                 value={buyerData.direccion}
@@ -83,13 +83,13 @@ const Buyer = () => {
             </div>
           </div>
           <div className="col-6">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <div class="input-group-text py-1">Ciudad</div>
+            <div className="input-group">
+              <div className="input-group-prepend">
+                <div className="input-group-text py-1">Ciudad</div>
               </div>
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 name="ciudad"
                 onChange={handleChange}
                 value={buyerData.ciudad}
@@ -99,13 +99,13 @@ const Buyer = () => {
         </div>
         <div className="row mb-2">
           <div className="col-6">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <div class="input-group-text py-1">Fecha factura</div>
+            <div className="input-group">
+              <div className="input-group-prepend">
+                <div className="input-group-text py-1">Fecha factura</div>
               </div>
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 name="fechaFactura"
                 onChange={handleChange}
                 value={buyerData.fechaFactura}
@@ -113,13 +113,13 @@ const Buyer = () => {
             </div>
           </div>
           <div className="col-6">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <div class="input-group-text py-1">Fecha vencimiento</div>
+            <div className="input-group">
+              <div className="input-group-prepend">
+                <div className="input-group-text py-1">Fecha vencimiento</div>
               </div>
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 name="fechaVencimiento"
                 onChange={handleChange}
                 value={buyerData.fechaVencimiento}

@@ -6,26 +6,15 @@ import Owner from "./Owner";
 import { v4 } from "uuid";
 import CUFE from "./CUFE";
 import Qr from "./Qr";
+import Products from "./Products"
 
 const Main = () => {
   const numFactura = Math.floor(Math.random() * (1999999 - 1000000) + 1000000);
   const v4QrCufe = v4();
-  const styles = {
-    main: {
-      width: "100vw",
-      height: "100vh",
-      display: "flex",
-      justifyContent: "center",
-      alignContent: "center",
-    },
-    container: {
-      width: "90%",
-    },
-  };
 
   return (
-    <div style={styles.main}>
-      <div style={styles.container}>
+    < >
+      <div className="container">
         <div className="row">
           <div className="col-6">
             <Logo />
@@ -49,13 +38,14 @@ const Main = () => {
             <Buyer />
           </div>
         </div>
+            <Products/>
         <div className="row">
           <div className="col-12">
             <CUFE cufe={v4QrCufe} />
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
