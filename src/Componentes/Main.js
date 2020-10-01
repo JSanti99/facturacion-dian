@@ -9,6 +9,7 @@ import Qr from "./Qr";
 
 const Main = () => {
   const numFactura = Math.floor(Math.random() * (1999999 - 1000000) + 1000000);
+  const v4QrCufe = v4();
   const styles = {
     main: {
       width: "100vw",
@@ -34,7 +35,7 @@ const Main = () => {
               <div className="col-6">
                 <Owner />
               </div>
-              <div className="col-6">{/* <Qr /> */}</div>
+              <div className="col-6">{<Qr qr={v4QrCufe} />}</div>
             </div>
             <div className="row">
               <div className="col">
@@ -50,7 +51,7 @@ const Main = () => {
         </div>
         <div className="row">
           <div className="col-12">
-            <CUFE cufe={v4()} />
+            <CUFE cufe={v4QrCufe} />
           </div>
         </div>
       </div>
